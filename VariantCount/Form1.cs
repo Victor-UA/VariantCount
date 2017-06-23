@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace VariantCount
@@ -15,8 +11,14 @@ namespace VariantCount
     {
 
         private List<Item> Items;
-        public int trueItemsCount { get; private set; } = 0;
-        public int ItemsCount { get; private set; } = 16;
+        /// <summary>
+        /// Кількість одночасно натиснених кнопок для створення події
+        /// </summary>
+        public int trueItemsCount { get; private set; } = 5;
+        /// <summary>
+        /// Кількість кнопок
+        /// </summary>
+        public int ItemsCount { get; private set; } = 10;
 
         public Form1()
         {
